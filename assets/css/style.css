@@ -155,3 +155,18 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+/* common class style start */
+.h2-common{
+  font-size: 42px;
+  padding: 60px 0 40px;
+  font-weight: bold;
+}
+
+.background-color-white { background: #B4C3CB; }
+.font-color-black { color: #000; }
+.font-color-white { color: #fff; }
+.img-border { border: 10px solid #fff; }
+.border-radius { border-radius: 30px;}
+.caps-first { text-transform: capitalize; }
+.caps { text-transform: uppercase; }
+/* common class style end */
