@@ -170,3 +170,7 @@ sub { bottom: -.25em; }
 .caps-first { text-transform: capitalize; }
 .caps { text-transform: uppercase; }
 /* common class style end */
+
+/* haeder section style start */
+header div figure{ position: relative; }
+/* haeder section style end */
