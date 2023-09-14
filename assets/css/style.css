@@ -187,6 +187,10 @@ sub { bottom: -.25em; }
   width: 94.44%;
   margin: 0 auto;
 }
+
+.hover-pointer{
+  cursor: pointer;
+}
 /* common class style end */
 
 /* haeder section style start */
@@ -213,7 +217,11 @@ header figure img{
 
 .structure h1{ font-size: 52px; }
 .structure h1 a { text-decoration: none; }
-.structure h1 a:hover{ color: #F98080; }
+
+.structure h1 a:hover{ 
+  color: #F98080; 
+  transition: 0.2s;
+}
 
 .structure{
   display: flex;
@@ -243,12 +251,12 @@ nav ul li{padding: 0 10px;}
 nav li a{text-decoration: none;}
 nav li input{display: none;}
 
-.search a{
+.icon{
   text-indent: -9999px;
   float: right;
   padding: 5px;
 }
-.search a::before {
+.icon::before {
   content: "\f002";
  font-family: "fontAwesome";
  text-indent: 0;
@@ -260,7 +268,11 @@ nav li input{display: none;}
     align-items: center;
 }
 
-.search a:hover{color: #F98080;}
+.search a:hover{
+  color: #F98080;
+  transition: 0.2s;
+}
+
 .search input {display: none;}
 
 .search a[title="shop"]{
@@ -371,7 +383,11 @@ nav li input{display: none;}
   float: left;
 }
 
-.number ul a:hover{ background-color: #F98080; }
+.number ul a:hover{ 
+  background-color: #F98080; 
+  transition: .2s;
+}
+
 .number ul li{
    width: 8%;
    height: 11px;
@@ -462,8 +478,13 @@ nav li input{display: none;}
 
 .floatt{
   position: absolute;
-  top: -5%;
-  left: 86%;
+  top: -10%;
+  left: 71%;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #F98080;
+  height: 13%;
+  width: 21%;
 }
 
 .floatimg{
@@ -484,6 +505,15 @@ nav li input{display: none;}
 /* about section style start */
 
 .about{padding: 0 0 120px;}
+
+.about .wrapper{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.about-div{width: 33%;}
+.instagram-div{width: 30%;}
+.our-sponsers{width: 27%;}
 
 .about ul{
   display: flex; 
