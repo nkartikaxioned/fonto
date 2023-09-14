@@ -436,6 +436,7 @@ nav li input{display: none;}
   justify-content: center;
   width: 45%;
 }
+
 /* slider div style start */
 /* meet our authors style start */
 
@@ -460,7 +461,9 @@ nav li input{display: none;}
 
 /* meet our authors style end */
 /* top-selling-designs style start */
+
 .top-selling-designs{padding: 0 0 80px 0;}
+
 .design{
   display: flex; 
   list-style: none;
@@ -501,7 +504,6 @@ nav li input{display: none;}
   color: #A2AFB7;
 }
 /* top-selling-designs style end */
-
 /* about section style start */
 
 .about{padding: 0 0 120px;}
@@ -532,9 +534,10 @@ nav li input{display: none;}
 }
 
 .about ul li{ width: 24%;}
-/* about section style end */
 
+/* about section style end */
 /* footer section style start */
+
 .privacy li:not(:first-child){border-left: 2px solid #fff;}
 footer{padding: 10px 0;}
 footer ul{
@@ -566,28 +569,44 @@ footer .wrapper {
 }
 
 .privacy li a{padding: 0 5px;}
-/* footer section style end */
 
+/* footer section style end */
 /* media query style start */
 
 @media screen and (max-width:1280px) {
+
+/* header section start*/
+header{
+  min-height: 550px;
+}
+.structure{
+  width: 94%;
+}
+.structure h1 {
+  font-size: 46px;
+}
+/* header section end */
   /* freshnewdesign start */
-.h2-common{font-size: 62px;}
+.h2-common{font-size: 62px; padding: 70px 0 35px;}
 
 .img-lists ul li{ width: 92%; padding: 10px;}
 /* freshnewdesign end */
 }
 
 @media screen and (max-width: 1024px) {
+  header{
+    min-height: 500px;
+  }
   .structure{
-    width: 80%;
+    width: 91%;
   }
   .structure h1 {
-    font-size: 42px;
+    font-size: 38px;
+    padding: 1%;
 }
 
 /* freshnewdesign start */
-.h2-common{font-size: 58px;}
+.h2-common{font-size: 58px; padding: 60px 0 20px;}
 
 .img-lists ul li{ width: 91%; padding: 9px;}
 /* freshnewdesign end */
@@ -596,19 +615,90 @@ footer .wrapper {
 }
 
 @media screen and (max-width: 995px) {
+
+  header{
+    min-height: 460px;
+  }
+  .structure{
+    width: 90%;
+  }
+  .structure h1 {
+    font-size: 36px;
+    padding-top: 2%;
+}
+
+
   /* freshnewdesign start */
 .h2-common{font-size: 52px;}
 
 .img-lists ul li{ width: 90%; padding: 8px;}
+
+.floatt span{ 
+  font-size: 10px;
+  width: 20%;
+  display: block;
+}
 /* freshnewdesign end */
+
+
+/* about section */
+.our-sponsers figure img {width: 100%;}
+/* about section */
 }
 
 @media screen and (max-width: 768px) {
+
+  header{
+    min-height: 410px;
+  }
+  .search{display: none;}
+
+  .img-lists{
+    flex-direction: column;
+  }
+
  /* freshnewdesign start */
- .h2-common{font-size: 48px; }
+ .h2-common{font-size: 48px; padding: 45px 0 15px;}
 
  .img-lists ul li{ width: 87%; padding: 7px;}
  /* freshnewdesign end */
+
+ /* design section start */
+ .design{
+  flex-direction: column;
+  align-items: center;
+ }
+
+.design li{ padding-bottom: 30px;}
+ .top-selling-designs { padding: 0 0 40px 0; }
+
+.design div{padding: 10px;}
+
+.design div h3{ 
+  font-size: 13px;
+  padding: 0 0 4px 0; 
+}
+.floatt span{ 
+  font-size: 10px;
+  width: 20%;
+  display: block;
+}
+/* design section end */
+
+ /* about section start */
+ .about .wrapper{flex-direction: column; align-items: center;}
+ .about h4 {text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+.about{padding: 0 0 60px;}
+
+.about-div p{ font-size: 12px;}
+ /* about section end */
+
+ /* footer section start */
+ .privacy li a {font-size: 12px;}
+ /* footer section end */
 }
 
 @media screen and (max-width: 480px){
@@ -617,6 +707,11 @@ footer .wrapper {
  
  .img-lists ul li{ width: 83%; padding: 6px;}
  /* freshnewdesign end */
+
+ /* about section start */
+ .about{padding: 0 0 45px;}
+ .about-div p{ font-size: 9px;}
+ /* about section end */
 }
 
 @media screen and (max-width: 320px){
@@ -625,5 +720,11 @@ footer .wrapper {
   
   .img-lists ul li{ width: 80%; padding: 4px;}
   /* freshnewdesign end */
+
+ /* about section start */
+ .about{padding: 0 0 30px;}
+ .about-div p{ font-size: 7px;}
+ /* about section end */
+
  }
 /* media query style end */
